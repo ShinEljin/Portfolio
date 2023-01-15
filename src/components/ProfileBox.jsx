@@ -16,7 +16,7 @@ const socials = [
 
 const ProfileBox = () => {
   return (
-    <aside className="sticky top-0 bg-[#242526]  md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
+    <aside className="sticky top-0 bg-dark-contrast-bg  md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div className="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5">
         <img src={profile} alt="raphael-enciso" className="w-full" />
       </div>
@@ -28,14 +28,14 @@ const ProfileBox = () => {
             href="https://www.plm.edu.ph/"
             target="_blank"
             rel="noreferrer"
-            className="text-purple-600 pl-1"
+            className="text-primary-blue pl-1"
           >
             PLM
           </a>
         </p>
         <a
           href="#0"
-          className="inline-block mb-3 rounded bg-purple-600 text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
+          className="inline-block mb-3 rounded bg-primary-blue text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
           download="Resume"
         >
           Download Resume
@@ -47,9 +47,7 @@ const ProfileBox = () => {
         </ul>
       </div>
       <div className="text-start pt-4">
-        <h3 className="text-md mb-2 uppercase font-medium text-gray-800">
-          Goal
-        </h3>
+        <h3 className="text-md mb-2 uppercase font-medium text-white">Goal</h3>
         <p className="text-gray-400 text font-light leading-relaxed">
           As a web developer, I am always looking to stay up-to-date with the
           latest technologies and trends in the industry. I am a strong believer
@@ -74,7 +72,7 @@ const SocialIcon = (props) => {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-[#242526] hover:bg-purple-600"
+        className="w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-dark-contrast-bg hover:bg-primary-blue"
       >
         {icon}
       </a>

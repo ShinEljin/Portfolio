@@ -22,6 +22,13 @@ module.exports = {
       "2xl": "1500px",
       // => @media (min-width: 1400px) { ... }
     },
+    extend: {
+      colors: {
+        "dark-main-bg": "#18191A",
+        "dark-contrast-bg": "#242526",
+        "primary-blue": "#2D86FF",
+      },
+    },
   },
   variants: {
     extend: {

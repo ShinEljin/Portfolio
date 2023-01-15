@@ -4,7 +4,7 @@ const PortfolioItem = (props) => {
   const { image, title, link, description } = props.portfolio;
   return (
     <div className="w-full lg:w-1/2">
-      <div className="my-4 md:mx-4 shadow p-6 rounded-md bg-[#242526] group hover:shadow-md">
+      <div className="my-4 md:mx-4 shadow p-6 rounded-md bg-dark-contrast-bg group hover:shadow-md">
         <div className="relative mb-6 w-full h-48 bg-purple-200 rounded-md overflow-hidden">
           <img
             src={image}
@@ -18,7 +18,7 @@ const PortfolioItem = (props) => {
                   href={link}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-12 h-10 text-xl text-purple-600 flex items-center justify-center border-2 border-purple-600 rounded hover:text-white hover:bg-purple-600"
+                  className="w-12 h-10 text-xl text-primary-blue flex items-center justify-center border-2 border-primary-blue rounded hover:text-white hover:bg-primary-blue"
                 >
                   <FaRegEye />
                 </a>

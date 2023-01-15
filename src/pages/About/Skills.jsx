@@ -67,13 +67,13 @@ const SkillItem = (props) => {
       <div className="mb-4 md:mx-4">
         <div className="flex justify-between items-center mb-1">
           <h5 className="text-md text-gray-400 font-light">{title}</h5>
-          <span className="text-md text-purple-600 font-bold">
+          <span className="text-md text-primary-blue font-bold">
             {percentage}
           </span>
         </div>
         <div className="w-full bg-purple-200 relative h-2 rounded">
           <div
-            className="absolute h-full left-0 top-0 bg-purple-600 rounded"
+            className="absolute h-full left-0 top-0 bg-primary-blue rounded"
             style={{ width: `${percentage}` }}
           ></div>
         </div>

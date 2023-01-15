@@ -4,13 +4,13 @@ const Contact = () => {
   return (
     <section className="pb-10">
       <div className="flex flex-wrap md:px-4">
-        <div className="p-8 md:mx-4 bg-[#242526] rounded-md shadow-md w-full mb-4">
+        <div className="p-8 md:mx-4 bg-dark-contrast-bg rounded-md shadow-md w-full mb-4">
           <div className="m-3">
             <h3 className="text-2xl text-white font-bold mb-6">Email</h3>
             <p className="text-gray-400">rphlncs@gmail.com</p>
           </div>
         </div>
-        <form className="p-8 md:mx-4 bg-[#242526] rounded-md shadow-md">
+        <form className="p-8 md:mx-4 bg-dark-contrast-bg rounded-md shadow-md">
           <div className="m-3">
             <h3 className="text-2xl text-white font-bold mb-6">Get in Touch</h3>
           </div>
@@ -22,7 +22,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="w-full border border-gray-500  rounded py-4 px-6 text-sm text-white bg-[#18191A]"
+                  className="w-full border border-gray-500  rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
                 />
               </div>
             </div>
@@ -33,7 +33,7 @@ const Contact = () => {
                   name="email"
                   required
                   placeholder="Your Email"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-[#18191A]"
+                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
                 />
               </div>
             </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                   name="subject"
                   required
                   placeholder="Subject"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-[#18191A]"
+                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
                 />
               </div>
             </div>
@@ -55,7 +55,7 @@ const Contact = () => {
                   required
                   placeholder="Your Message"
                   rows="6"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-[#18191A]"
+                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 <input
                   type="submit"
                   value="Send Message"
-                  className="rounded bg-purple-600 text-center border-0 py-3 px-6 text-white leading-7 tracking-wide hover:bg-purple-800 cursor-pointer"
+                  className="rounded bg-primary-blue text-center border-0 py-3 px-6 text-white leading-7 tracking-wide hover:bg-primary-blue cursor-pointer"
                 />
               </div>
             </div>
