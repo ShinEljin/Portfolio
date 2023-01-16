@@ -36,7 +36,7 @@ const navbarData = [
 const Navbar = () => {
   return (
     <Router>
-      <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-dark-contrast-bg shadow rounded">
+      <nav className="md:mx-8 mb-3 px-6 py-2 z-10 sticky top-0 bg-dark-bg-neutral shadow rounded">
         <ul className="flex flex-wrap">
           {navbarData.map((data, id) => (
             <LinkItem data={data} key={id} />
@@ -62,12 +62,14 @@ export default Navbar;
 const LinkItem = (props) => {
   const { title, to } = props.data;
   return (
-    <div className="group text-white transition-all duration-300 ease-in-out">
-      <li className="m-3 lg:mx-5  text-medium hover:text-primary-blue">
+    <div className="group text-dark-text-primary transition-all duration-300 ease-in-out">
+      <li className="m-3 lg:mx-5  text-medium hover:text-primary-main">
         <NavLink
           to={to}
           className={({ isActive }) =>
-            isActive ? "text-primary-blue" : undefined
+            isActive
+              ? "text-primary-main underline underline-offset-4"
+              : undefined
           }
         >
           {title}

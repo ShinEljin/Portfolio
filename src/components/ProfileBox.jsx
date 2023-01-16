@@ -16,26 +16,28 @@ const socials = [
 
 const ProfileBox = () => {
   return (
-    <aside className="sticky top-0 bg-dark-contrast-bg  md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
+    <aside className="sticky top-0 bg-dark-bg-neutral  md:mx-8 lg:mx-4 mb-8 p-6 shadow-md rounded-md -mt-40">
       <div className="w-24 h-24 rounded-md overflow-hidden mx-auto mb-5">
         <img src={profile} alt="raphael-enciso" className="w-full" />
       </div>
       <div className="text-center">
-        <h1 className="text-xl text-white font-bold mb-1">Raphael Enciso</h1>
-        <p className="text-sm text-gray-400 mb-3">
+        <h1 className="text-xl text-dark-text-primary font-bold mb-1">
+          Raphael Enciso
+        </h1>
+        <p className="text-sm text-dark-text-secondary mb-3">
           BS Computer Science Student at
           <a
             href="https://www.plm.edu.ph/"
             target="_blank"
             rel="noreferrer"
-            className="text-primary-blue pl-1"
+            className="text-primary-main pl-1"
           >
             PLM
           </a>
         </p>
         <a
           href="#0"
-          className="inline-block mb-3 rounded bg-primary-blue text-center border-0 py-2 px-6 text-white leading-7 tracking-wide hover:bg-purple-800"
+          className="inline-block mb-3 rounded bg-primary-main text-center border-0 py-2 px-6 text-dark-text-primary leading-7 tracking-wide hover:opacity-75"
           download="Resume"
         >
           Download Resume
@@ -47,8 +49,10 @@ const ProfileBox = () => {
         </ul>
       </div>
       <div className="text-start pt-4">
-        <h3 className="text-md mb-2 uppercase font-medium text-white">Goal</h3>
-        <p className="text-gray-400 text font-light leading-relaxed">
+        <h3 className="text-md mb-2 uppercase font-medium text-dark-text-primary ">
+          Goal
+        </h3>
+        <p className="text-dark-text-secondary text font-light leading-relaxed">
           As a web developer, I am always looking to stay up-to-date with the
           latest technologies and trends in the industry. I am a strong believer
           in the power of open-source software and regularly contribute to
@@ -72,7 +76,7 @@ const SocialIcon = (props) => {
         href={link}
         target="_blank"
         rel="noreferrer"
-        className="w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-dark-contrast-bg hover:bg-primary-blue"
+        className="w-8 h-8 bg-purple-100 rounded text-purple-800 flex items-center justify-center hover:text-dark-bg-neutral hover:bg-primary-main"
       >
         {icon}
       </a>

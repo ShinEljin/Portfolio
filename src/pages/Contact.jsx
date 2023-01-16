@@ -4,15 +4,19 @@ const Contact = () => {
   return (
     <section className="pb-10">
       <div className="flex flex-wrap md:px-4">
-        <div className="p-8 md:mx-4 bg-dark-contrast-bg rounded-md shadow-md w-full mb-4">
+        <div className="p-8 md:mx-4 bg-dark-bg-neutral rounded-md shadow-md w-full mb-4">
           <div className="m-3">
-            <h3 className="text-2xl text-white font-bold mb-6">Email</h3>
-            <p className="text-gray-400">rphlncs@gmail.com</p>
+            <h3 className="text-2xl text-dark-text-primary font-bold mb-6">
+              Email
+            </h3>
+            <p className="text-dark-text-secondary">rphlncs@gmail.com</p>
           </div>
         </div>
-        <form className="p-8 md:mx-4 bg-dark-contrast-bg rounded-md shadow-md">
+        <form className="p-8 md:mx-4 bg-dark-bg-neutral rounded-md shadow-md">
           <div className="m-3">
-            <h3 className="text-2xl text-white font-bold mb-6">Get in Touch</h3>
+            <h3 className="text-2xl text-dark-text-primary font-bold mb-6">
+              Get in Touch
+            </h3>
           </div>
           <div className="w-full flex flex-wrap">
             <div className="w-full md:w-1/2">
@@ -22,7 +26,7 @@ const Contact = () => {
                   name="name"
                   placeholder="Your Name"
                   required
-                  className="w-full border border-gray-500  rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
+                  className="w-full rounded-xl py-4 px-6 text-sm text-dark-text-primary bg-dark-bg-neutral-lighter focus:outline focus:outline-dark-text-secondary focus:bg-dark-bg-main "
                 />
               </div>
             </div>
@@ -33,7 +37,7 @@ const Contact = () => {
                   name="email"
                   required
                   placeholder="Your Email"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
+                  className="w-full  rounded-xl py-4 px-6 text-sm text-dark-text-primary bg-dark-bg-neutral-lighter focus:outline focus:outline-dark-text-secondary focus:bg-dark-bg-main"
                 />
               </div>
             </div>
@@ -44,7 +48,7 @@ const Contact = () => {
                   name="subject"
                   required
                   placeholder="Subject"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
+                  className="w-full rounded-xl py-4 px-6 text-sm text-dark-text-primary bg-dark-bg-neutral-lighter focus:outline focus:outline-dark-text-secondary focus:bg-dark-bg-main"
                 />
               </div>
             </div>
@@ -55,7 +59,7 @@ const Contact = () => {
                   required
                   placeholder="Your Message"
                   rows="6"
-                  className="w-full border border-gray-500 rounded py-4 px-6 text-sm text-white bg-dark-main-bg"
+                  className="w-full  rounded-xl py-4 px-6 text-sm text-dark-text-primary bg-dark-bg-neutral-lighter focus:outline focus:outline-dark-text-secondary focus:bg-dark-bg-main"
                 />
               </div>
             </div>
@@ -64,7 +68,7 @@ const Contact = () => {
                 <input
                   type="submit"
                   value="Send Message"
-                  className="rounded bg-primary-blue text-center border-0 py-3 px-6 text-white leading-7 tracking-wide hover:bg-primary-blue cursor-pointer"
+                  className="rounded-xl bg-primary-main text-center py-3 px-6 text-dark-text-primary leading-7 tracking-wide hover:opacity-75 cursor-pointer "
                 />
               </div>
             </div>

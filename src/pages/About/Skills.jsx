@@ -47,7 +47,9 @@ const Skills = () => {
       <div className="flex flex-wrap">
         <div className="w-full">
           <div className="md:mx-4">
-            <h3 className="text-2xl text-white font-bold mb-4">Skills</h3>
+            <h3 className="text-2xl text-dark-text-primary font-bold mb-4">
+              Skills
+            </h3>
           </div>
         </div>
         {skillData.map((skill, id) => (
@@ -66,14 +68,16 @@ const SkillItem = (props) => {
     <div className="w-full md:w-1/2">
       <div className="mb-4 md:mx-4">
         <div className="flex justify-between items-center mb-1">
-          <h5 className="text-md text-gray-400 font-light">{title}</h5>
-          <span className="text-md text-primary-blue font-bold">
+          <h5 className="text-md text-dark-text-secondary font-light">
+            {title}
+          </h5>
+          <span className="text-md text-primary-main font-bold">
             {percentage}
           </span>
         </div>
         <div className="w-full bg-purple-200 relative h-2 rounded">
           <div
-            className="absolute h-full left-0 top-0 bg-primary-blue rounded"
+            className="absolute h-full left-0 top-0 bg-primary-main rounded"
             style={{ width: `${percentage}` }}
           ></div>
         </div>

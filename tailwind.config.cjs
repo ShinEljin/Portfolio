@@ -24,9 +24,13 @@ module.exports = {
     },
     extend: {
       colors: {
-        "dark-main-bg": "#18191A",
-        "dark-contrast-bg": "#242526",
-        "primary-blue": "#2D86FF",
+        "primary-main": "#0080ff",
+        "secondary-main": "#FFA000",
+        "dark-text-primary": "#e4e6eb",
+        "dark-text-secondary": "#b0b3b8",
+        "dark-bg-main": "#18191A",
+        "dark-bg-neutral": "#242526",
+        "dark-bg-neutral-lighter": "#3a3b3c",
       },
     },
   },
